@@ -20,7 +20,12 @@
             position: absolute;
             background-color: #ffffff;
         }
-
+        .bonjovi {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+        }
 
     </style>
 
@@ -44,7 +49,7 @@
                     width: (inIFrame && window.innerWidth) || parseInt(queryParams.w) || 640,
                     height: (inIFrame && window.innerHeight) || parseInt(queryParams.h) || 360,
                     autoPlay: !!parseInt(queryParams.a) || true,
-                    repeat: !!parseInt(queryParams.r) || false,
+                    repeat: !!parseInt(queryParams.r) || true,
                     controlsEnabled: !!parseInt(queryParams.c) || false
                 };
 
@@ -76,7 +81,7 @@
 <body>
 
         <a href="https://gjg.github.io" target="_blank">
-        <div id="target"></div>
+        <div id="target" class="bonjovi"></div>
     </a>
 </body>
 </html>
